@@ -1,4 +1,3 @@
-// src/components/DeviceGrid.js
 import React from "react";
 import DeviceCard from "./DeviceCard";
 

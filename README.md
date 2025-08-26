@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This is a **Smart Home Control Panel** responsive web application built with **React** and **Tailwind CSS**.
+This is a **Smart Home Dashboard** responsive web application built with **React** and **Tailwind CSS**.
 It allows users to view and control smart devices grouped by rooms, providing an interactive and visually clean dashboard experience.
 
 The app includes **real-time weather**, **energy usage**, and **device state management** with local persistence.
@@ -58,25 +58,22 @@ The app includes **real-time weather**, **energy usage**, and **device state man
 
 ---
 
-## Screenshots / Demo
+## Live Demo
+You can see the live working application here:
+    [Live](https://your-vercel-app-url.vercel.app)
 
-* Dashboard Screenshot
-* Rooms Horizontal Scroll
-* Device Grid
-
-*(Optional: Include GIF/video showing device toggling and horizontal scroll)*
 
 ---
 
 ## Installation & Setup
 
 1. Clone the repository:
-   `git clone <YOUR_REPO_URL>`
+   `git clone https://github.com/navgurukul/Smart Home Dashboard.git`
 2. Install dependencies:
    `npm install`
 3. Start the development server:
    `npm run dev`
-4. Open the app in your browser at `http://localhost:5173`
+4. Open the app in your browser at `http://localhost:5173/`
 
 ---
 

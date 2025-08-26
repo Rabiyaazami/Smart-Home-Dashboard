@@ -60,7 +60,7 @@ The app includes **real-time weather**, **energy usage**, and **device state man
 
 ## Live Demo
 You can see the live working application here:
-    [Live](https://your-vercel-app-url.vercel.app)
+    [Live](https://smart-home-dashboard-tawny.vercel.app)
 
 
 ---
@@ -68,7 +68,7 @@ You can see the live working application here:
 ## Installation & Setup
 
 1. Clone the repository:
-   `git clone https://github.com/navgurukul/Smart Home Dashboard.git`
+   `git clone https://github.com/Swatinavgurukul/Smart-Home-Dashboard.git`
 2. Install dependencies:
    `npm install`
 3. Start the development server:

@@ -5,7 +5,8 @@ import DeviceGrid from "./DeviceGrid.jsx";
 import { devices as mockDevices } from "../data/mockData";
 
 const Dashboard = () => {
-  const weather = useWeather("Bangalore");
+  const [city, setCity] = useState("Bangalore");
+  const weather = useWeather(city);
 
   // Device state with localStorage persistence
   const [devices, setDevices] = useState(() => {
@@ -60,9 +61,26 @@ const Dashboard = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
         {/* Weather Card */}
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center">
-          <h3 className="text-lg sm:text-xl font-medium text-gray-700 mb-2">
-            Weather in Bangalore
-          </h3>
+          <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-3 mb-4">
+            <h3 className="text-lg sm:text-xl font-medium text-gray-700">
+              Weather in {city}
+            </h3>
+            <button
+              onClick={() => {
+                const newCity = prompt("Enter city name:", city);
+                if (newCity && newCity.trim()) {
+                  setCity(newCity.trim());
+                }
+              }}
+              className="flex items-center justify-center gap-1 px-3 py-1 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-full text-sm font-medium transition-colors duration-200 w-fit"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Check Other Place
+            </button>
+          </div>
           {weather ? (
             <>
               <p className="text-3xl font-bold text-gray-900">

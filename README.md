@@ -56,19 +56,10 @@ The app includes **real-time weather**, **energy usage**, and **device state man
 * Responsive layout for mobile, tablet, and desktop
 * Temperature unit toggle (°C ↔ °F)
 
----
-
-## Live Demo
-You can see the live working application here:
-    [Live](https://smart-home-dashboard-tawny.vercel.app)
-
-
----
-
 ## Installation & Setup
 
 1. Clone the repository:
-   `git clone https://github.com/Swatinavgurukul/Smart-Home-Dashboard.git`
+   `git clone https://github.com/Rabiyaazami/Smart-Home-Dashboard.git`
 2. Install dependencies:
    `npm install`
 3. Start the development server:
@@ -84,18 +75,6 @@ You can see the live working application here:
 * Switch temperature units in the Weather card
 * The app is fully responsive on mobile and desktop
 
----
-
-## Repository & Collaboration
-
-* Private GitHub repository with collaborators:
-
-  * Joy Baruah
-  * Aravind
-  * Inamul Hassan
-  * Dhanush
-
----
 
 ## Conclusion
 
